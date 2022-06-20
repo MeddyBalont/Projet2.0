@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Booki</title>
+  </head>
+  <header>
+    <h1>Trouver la maison de vos rêves</h1>
+    <p>En plein centre ville ou en pleine nature</p>
+
+    {# On met les 3 ensemble dans une div, cette div va avoir un border pour
+    tout mettre ensemble visuellement, puis un row en flex (voir docu flexbox)
+    #}
+    <div class="search">
+      <img src="" alt="" />
+      <input type="text" placeholder="Marseille, France" />
+      <button>Rechercher</button>
+    </div>
+
+    <div class="filtre">
+      <p class="bold">Filtres</p>
+      <nav>
+        <ul>
+          <li class="filtre-arrondi-1 buttonFilter">
+            <img src="./src/billet.png" alt="" class="imgFilter" />
+            <button class="buttonTop">Économique</button>
+          </li>
+          <li class="filtre-arrondi-2 buttonFilter">
+            <img src="./src/person.png" alt="" class="imgFilter" />
+            <button class="buttonTop">Familial</button>
+          </li>
+          <li class="filtre-arrondi-3 buttonFilter">
+            <img src="./src/heart.png" alt="" class="imgFilter" />
+            <button class="buttonTop">Romantique</button>
+          </li>
+          <li class="filtre-arrondi-4 buttonFilter">
+            <img src="./src/pet.png" alt="" class="imgFilter" />
+            <button class="buttonTop">Animaux autorisés</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <img src="" alt="" />
+
+    {# Ici mettre ton h3 dans une balise p, les h3 sont lu par le robot SEO de
+    google voit les h1, h2, h3 comme des titre d'articles par exemple #}
+    <p>Plus de 500 logements sont disponible dans cette ville</p>
+  </header>
+
+  <body>
+    <div class="contenu-haut">
+      <div class="gauche">
+        <h1>Hébergements à Marseille</h1>
+        <ul class="articles">
+          <li class="cardArticle">
+            <div class="imgArticle">
+              <img src="./src/chambre1.png" alt="" />
+            </div>
+            <div class="info">
+              <h3>Auberge La Cannebière</h3>
+              <p>Nuit à partir de <span class="gras">25€</span></p>
+              <img src="./src/4stars.png" alt="" class="ratingArticle" />
+            </div>
+          </li>
+          <li class="cardArticle">
+            <div class="imgArticle">
+              <img src="./image/Hôtel de la mer.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>Auberge La Cannebière</h3>
+              <p>Nuit à partir de <span class="gras">25€</span></p>
+              <img src="./src/4stars.png" alt="" class="ratingArticle" />
+            </div>
+          </li>
+          <li class="cardArticle">
+            <div class="imgArticle">
+              <img src="./image/exterior.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>Auberge La Cannebière</h3>
+              <p>Nuit à partir de <span class="gras">25€</span></p>
+              <img src="./src/4stars.png" alt="" class="ratingArticle" />
+            </div>
+          </li>
+          <li class="cardArticle">
+            <div class="imgArticle">
+              <img src="./image/Auberge Le Panier.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>Auberge La Cannebière</h3>
+              <p>Nuit à partir de <span class="gras">25€</span></p>
+              <img src="./src/4stars.png" alt="" class="ratingArticle" />
+            </div>
+          </li>
+          <li class="cardArticle">
+            <div class="imgArticle">
+              <img src="./image/Hôtel Les mouettes.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>Auberge La Cannebière</h3>
+              <p>Nuit à partir de <span class="gras">25€</span></p>
+              <img src="./src/4stars.png" alt="" class="ratingArticle" />
+            </div>
+          </li>
+          <li class="cardArticle">
+            <div class="imgArticle">
+              <img src="./image/Hôtel chez Amina.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>Auberge La Cannebière</h3>
+              <p>Nuit à partir de <span class="gras">25€</span></p>
+              <img src="./src/4stars.png" alt="" class="ratingArticle" />
+            </div>
+          </li>
+        </ul>
+        <p>Afficher plus</p>
+      </div>
+
+      <div class="droite">
+        <h1>titre</h1>
+        <ul class="articles">
+          <li class="cardArticle">
+            <div class="imgArticle">
+              <img src="./src/chambre1.png" alt="" />
+            </div>
+            <div class="info">
+              <h3>Auberge La Cannebière</h3>
+              <p>Nuit à partir de <span class="gras">25€</span></p>
+              <img src="./src/4stars.png" alt="" class="ratingArticle" />
+            </div>
+          </li>
+          <li class="cardArticle">
+            <div class="imgArticle">
+              <img src="./src/chambre1.png" alt="" />
+            </div>
+            <div class="info">
+              <h3>Auberge La Cannebière</h3>
+              <p>Nuit à partir de <span class="gras">25€</span></p>
+              <img src="./src/4stars.png" alt="" class="ratingArticle" />
+            </div>
+          </li>
+          <li class="cardArticle">
+            <div class="imgArticle">
+              <img src="./src/chambre1.png" alt="" />
+            </div>
+            <div class="info">
+              <h3>Auberge La Cannebière</h3>
+              <p>Nuit à partir de <span class="gras">25€</span></p>
+              <img src="./src/4stars.png" alt="" class="ratingArticle" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contenu-bas">
+      <h1>Acitivité à Marseilles</h1>
+      <div class="articles-10">
+        <img src="" alt="" />
+        <h3>Vieux Port</h3>
+      </div>
+
+      <div class="articles-milieu-gauche">
+        <div class="articles-11">
+          <img src="" alt="" />
+          <h3>Fort de Pomègnes</h3>
+        </div>
+        <div class="articles-12">
+          <img src="" alt="" />
+          <h3>île de Frioul</h3>
+        </div>
+      </div>
+      <div class="articles-13">
+        <img src="" alt="" />
+        <h3>Parc National des Calanques</h3>
+      </div>
+      <div class="articles-droite">
+        <div class="articles-14">
+          <img src="" alt="" />
+          <h3>Fort de Pomègnes</h3>
+        </div>
+        <div class="articles-15">
+          <img src="" alt="" />
+          <h3>île de Frioul</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    {# cette première div va gérer le fond pour avoir un background-color grey +
+    flexbox avec un display row #}
+    <div>
+      <p class="gras">A propos</p>
+      <p>Fonctionnement du site</p>
+      <p>Conditions générales du site</p>
+      <p>Données et confidentialité</p>
+    </div>
+    <div>
+      <p class="gras">Nos hébergments</p>
+      <p>Charte qualité</p>
+      <p>Soumettre votre hôtel</p>
+    </div>
+    <div>
+      <p class="gras">Assistance</p>
+      <p>Centre d'aide</p>
+      <p>Nous contacter</p>
+    </div>
+  </footer>
+</html>
