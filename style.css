@@ -115,8 +115,12 @@ header {
     /* filtres */
 }
 
-.titre .filter{
-  vertical-align: center;
+.titre {
+    display: flex;
+    margin: 7px;
+    align-items: center;
+    margin-top: 18px;
+
 }
 
 
