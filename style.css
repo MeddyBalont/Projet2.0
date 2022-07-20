@@ -17,9 +17,23 @@ gap: 750px;
 
 .navigation {
     display: flex;
-    margin: 10px;
-    gap: 10px;
-}
+    align-items: center;
+    grid-area: navbar;
+  }
+  .navi {
+    padding: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    transition-duration: 0.1s;
+    border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
+  }
+  .navi[data-active=true] {
+    color: #0065FC;
+  }
+  .navi:hover {
+    color: #0065FC;
+  }
 
 .booki {
     height: 50px;
@@ -102,12 +116,10 @@ header {
 }
 
 .titre .filter{
-justify-content: flex-end;
+  vertical-align: center;
 }
 
-.titre {
-    display: inline-block;
-}
+
 .filter{
   
     padding:0px 15px 10px 0px;
@@ -115,7 +127,8 @@ justify-content: flex-end;
     display:inline-block;
     border-radius:16px;
     height:31px;
-    margin-left:20px;
+    margin-left:10px;
+    margin-top: 10px;
   
 }
 .filter span:first-child{
@@ -132,7 +145,7 @@ justify-content: flex-end;
 }
 
 /* Ce procede est le meme quand on a une image */
-.filter span:first-child svg{
+.filter span:first-child img{
    
     width:16px;
     height:16px;
@@ -156,14 +169,21 @@ justify-content: flex-end;
   
 }
 
+.blue-image path{
+fill: #0065FC;
+}
+
 .emplacement{
-margin-top: 10px;
+    display: flex;
+    justify-content: baseline;
+margin-top: 5px;
 margin-bottom: 5px;
 }
 
 .logements{
     display: flex;
-    gap: 5px;
+    gap: 10px;
+    margin-top: 25px;
 }
 .info{
 width: 15px;
@@ -398,6 +418,7 @@ margin-top: 30px;
 .marseille-activities-flex-child p{
   
     font-weight:bold;
+    margin-top: 10px;
     margin-left:15px;
     display:inline-block;
   
@@ -479,9 +500,9 @@ margin-top: 30px;
 
 .bottom {
     display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-right: 200px;
+    gap: 300px;
+    margin-top: 40px;
+    margin-left: 150px;
 
 }
 
@@ -489,7 +510,6 @@ margin-top: 30px;
     font-weight: bold;
 }
 
-.bas{
-    margin: 0px;
-
-}
+.bas p{
+    margin: 10px;
+} 
