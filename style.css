@@ -1,576 +1,364 @@
-html, body{
-    
-    font-family: 'Raleway', sans-serif;
-}
-/* tablette*/
-@media only screen and (min-width: 768px) and (max-width: 991px)
-{
+/*généra*/
 
-    .navigation{
-        justify-content: flex-end;
-    }
-
-    .emplacement {
-        width:200px;
-        flex-direction: column;
-    }
-
-    #wrapper-area h3 {
-        text-align: center;
-    }
-
-    #wrapper-area #flex-area {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        margin-top: 30px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #wrapper-all-lodgings {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #marseille-activities {
-        text-align: center;
-    }
-
-    #marseille-activities-flex {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .bottom {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
+:root {
+    --blue: #0065FC;
+    --light-blue: #DEEBFF;
+    --grey: #F2F2F2;
 }
 
-.pageContent{
-    width: 1200px;
-    margin:0 auto;
-    padding:0;
+body {
+    font-family: Raleway;
+    margin: 0;
+    padding: 0px 50px;
+    font-size: 18px;
 }
 
-.panneau {
-display: flex;
-gap: 750px;
+h1 {
+    font-size: 150%;
 }
 
-.navigation {
-    display: flex;
-    align-items: center;
-    
-  }
-  .navi {
-    padding: 0.9rem;
-    font-weight: 500;
-    text-align: center;
-    transition-duration: 0.1s;
-    text-decoration: none;
-    border-top: 3px transparent solid;
-    border-bottom: 3px transparent solid;
-    
-
-  }
-  .navi[data-active=true] {
-    color: #0065FC;
-  }
-  .navi:hover {
-    color: #0065FC;
-  }
-
-.booki {
-    height: 50px;
-    width: 90px;
-    margin-left: 30px;
+h2 {
+    font-size: 120%;
+    ;
 }
 
-/* HEADER */
 
 
-h1{
-    font-size: 28px;
-    font-weight: 250;
-}
-
+/*header*/
 header {
-    margin: 3% 3% 0;
-}
-
-.h1-header{
-    font-size: 15px;
-    font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 5px;
-}
-
-.desc-header{
-    font-size: 10px;
-    font-style: italic;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 10px;
-
-}
-
-
-
-.icon{
-    display: inline;
-    position: relative;
-    margin-left: 25px;
-}
-
-.icon-location{
-    width: 25px;
-    position: absolute;
-    right: 0px;
-    background-color: #dbd8d8;
-    padding: 8px 5px 8px 5px;
-    border-radius: 5px 1px 0px 5px;
-}
-
-.search{
-    display: inline;
-    border: 1px solid rgb(209, 209, 209);
-    padding: 3px 5px 7px 5px;
-}
-
-.search-input{
-    border: none;
-}
-
-.search-input:focus{
-    outline: none;
-}
-
-.search-button{
-    background-color: blue;
-    border: none;
-    padding: 8px 7px 7px 7px;
-    border-radius: 0px 10px 10px 0px;
-    text-align: center;
-    vertical-align: center;
-    color: white;
-}
-
-*{
-    box-sizing:border-box;
-  
-    /* filtres */
-}
-
-.titre {
     display: flex;
-    margin: 7px;
-    align-items: center;
-    margin-top: 18px;
-
+    justify-content: space-between;
+    padding: 1px;
 }
 
-
-.filter{
-  
-    padding:0px 15px 10px 0px;
-    border:1px solid #eeeeee;
-    display:inline-block;
-    border-radius:16px;
-    height:31px;
-    margin-left:10px;
-    margin-top: 10px;
-  
-}
-.filter span:first-child{
-     height:29px;
-     width:29px;
-     background:#87CEFA;
-     border-radius:50%;
-     position:relative;
-  
-}
-.filter span{
-    display:inline-block;
-  
+header #logo {
+    padding: 25px 0px;
 }
 
-/* Ce procede est le meme quand on a une image */
-.filter span:first-child img{
-   
-    width:16px;
-    height:16px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate3d(-8px, -8px, 0);
-  
+header #logo img {
+    width: 150px;
 }
 
-.filter span:last-child{ 
-   margin-left:7px;
-   transform:translate3d(0,5px,0);
-   vertical-align:top;
-  
-}
-.filter:hover{
-  
-    background:blue;
-    color:#ffffff;
-  
-}
-
-.blue-image path{
-fill: #0065FC;
-}
-
-.emplacement{
+header nav ul {
     display: flex;
-    justify-content: baseline;
-margin-top: 5px;
-margin-bottom: 5px;
-}
-
-.logements{
-    display: flex;
-    gap: 10px;
-    margin-top: 25px;
-}
-.info{
-width: 15px;
-height: 15px;
-}
-
-ul
-{
     list-style-type: none;
+    margin: 0;
+}
+
+header nav ul li {
+    padding: 50px 25px;
+    border-top: 4px solid transparent;
+    margin: 0px 20px 0px 20px;
+}
+
+header nav ul li:hover {
+    border-color: var(--blue);
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul li:hover a {
+    color: var(--blue);
+}
+
+
+/*Titre et box*/
+
+h1 {
+    margin-bottom: 0px
+}
+
+.subtitle {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: inline-block;
+    border: 1px solid var(--grey);
+    border-radius: 15px;
+    width: auto;
+}
+
+.search-box .fa-map-marker-alt {
+    display: inline-block;
+    padding: 14px;
+    height: 28px;
+    font-size: 25px;
+    background-color: var(--grey);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.search-box input {
+    outline: none;
+    height: 52px;
+    margin-left: -5px;
+    border: none;
+    padding: 10px;
+}
+
+.search-box button {
+    background-color: var(--blue);
+    color: white;
+    height: 52px;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.search-box button .fa-search {
+    display: none;
+}
+
+
+/*Filtres*/
+#filter {
+    display: flex;
+    align-items: center;
+}
+
+#filter .filtres {
+    margin: 0px 10px;
+    border-radius: 30px;
+    border: 2px solid var(--grey);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+#filter .filtres i {
+    background-color: var(--light-blue);
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border-radius: 100%;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#filter .filtres:hover {
+    transition: background-color 1s;
+    background-color: var(--light-blue);
+}
+
+#filter .filtres .text {
+    padding: 0px 10px;
+}
+
+
+/*infor*/
+.info {
     display: flex;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-*{
-  
-     box-sizing:border-box;
-  
+.info .fas.fa-info {
+    color: var(--blue);
+    border: 1px solid var(--grey);
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px)
-{
 
-}
-
-/* Toute la zone au dessus n'est pas utile pour ton travail */
-
-.blue-icon path{
-    
-    fill:#0065FC;
-  
-}
-.grey-icon path{
-  
-    fill:#F2F2F2;
+/*hébergement*/
+#hebergement {
+    display: flex;
+    justify-content: space-between;
 }
 
-#wrapper-all-lodgings{
-    
-    display:flex;
-    gap:30px;
-  
-}
-#wrapper-area{
-  
-     padding:10px 30px 10px 30px;
-     width:70%; /*Pas utile pour toi tu devras trouver tes propres dimentions */
-     background:#F2F2F2;
-     margin-top:30px; /* Pas utile pour toi tu devras trouver tes propres dimensions */
-     border-radius:15px;
-     
-  
-}
-#wrapper-area #flex-area{
-    display:flex;
-    flex-wrap:wrap;
-    gap:30px; /* Utile pour toi 
-    
-    https://coryrylan.com/blog/css-gap-space-with-flexbox
-
-*/
-margin-top: 30px;
-
-}
-#flex-area a{
-    text-decoration:none;
-    color:#000000;
-    display:block;
-    width: calc((100% / 3) - 20px);
-    height:200px;
-    background:#ffffff;
-    padding:3px;
-    border-radius:10px;
-    box-shadow: 1px 0px 3px 0px rgba(158,158,158,1);
-/*     Link to generate the box-shadow: https://www.cssmatic.com/box-shadow */
-}
-#flex-area a img{
-    object-fit:cover;
-    width:100%;
-    height: 60%;
-    border-radius:10px 10px 0 0;
-  
-}
-#flex-area a *:not(img){
-  
-    margin-left:10px;
-    display:inline-block;
-    width:100%;
-    margin-top:5px;
-  
-}
-#flex-area a span:first-of-type{
-   
-     font-weight:bold;
-     font-size:1rem;
-  
-}
-#flex-area a span:nth-of-type(2){
-    font-size:0.9rem;
-  
+#hebergement section h2 {
+    margin-top: 0px;
 }
 
-#flex-area a div:first-of-type svg{
-     width:14px;
-     height:14px;
-     margin:0;
-  
+#hebergement section .container {
+    background-color: var(--grey);
+    padding: 20px 20px 10px 20px;
+    border-radius: 20px;
+    height: calc(100% - 120px);
+    box-sizing: content-box;
 }
 
-/* Zone les plus populaires */
-#wrapper-most-popular{
-     margin-top:30px; /* Pas utile pour toi tu devras trouver tes propres dimensions */
-     width:40%; /* Pas utile pour toi tu devras trouver tes propres dimensions; */
-     background:#F2F2F2;
-     border-radius:15px;
-     padding:10px 30px 10px 30px;
-     position:relative;
-  
-}
-#wrapper-most-popular h3{
-    
-    display:inline-block;
-  
-}
-#wrapper-most-popular .right-icon{
-     
-     width:20px;
-     height:20px;
-     vertical-align:middle;
-     position:absolute;
-     top:20px;
-     right:30px;
+.hebergement-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#most-populars-flex{
-  
-    display:flex;
-    flex-direction:column;
-    gap:30px;
-    margin-top: 25px;
-  
+.hebergement-list a {
+    width: 30%;
+    margin-bottom: 50px;
 }
-#most-populars-flex a{
-    text-decoration:none;
-    color:#000000;
+
+.hebergement-list a article {
+    background-color: white;
+    padding: 6px;
+    border-radius: 25px;
+    height: 100%;
+}
+
+.hebergement-list a article:hover {
+    box-shadow: 5px 5px 5px 0px #E2E2E2;
+}
+
+.hebergement-list a article .fa-star.blue {
+    color: var(--blue);
+}
+
+.hebergement-list a article .fa-star.grey {
+    color: var(--grey);
+}
+
+.hebergement-list a article img {
     width: 100%;
-    height:140px;
-    background:#ffffff;
-    padding:3px;
-    border-radius:10px;
-    box-shadow: 1px 0px 3px 0px rgba(158,158,158,1);
-/*     Link to generate the box-shadow: https://www.cssmatic.com/box-shadow */
-  
-    display:flex;
-}
-#most-populars-flex a img:first-child{
-    
-    width:40%;
-    border-radius:10px 0 0 10px;
-    object-fit:cover;
-  
-}
-#most-populars-flex a div:first-of-type{
-  
-     width:60%;
-     padding:15px;
-     position:relative;
-  
+    height: 160px;
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
 }
 
-#most-populars-flex a div:first-of-type *{
-  
-     display:inline-block;
-     width:100%;
-  
-}
-#most-populars-flex a div:first-of-type span:first-child{
-   
-     font-weight:bold;
-     font-size:1rem;
-  
-}
-#most-populars-flex a div:first-of-type span:nth-child(2){
-    font-size:0.9rem;
-    margin-top:10px;
-  
+.hebergement-list a {
+    color: black;
+    text-decoration: none;
 }
 
-#most-populars-flex a div:first-of-type div:last-child{
-    
-    position:absolute;
-    bottom:5px;
-    left:0;
-    padding-bottom:0;
-  
-}
-#most-populars-flex a div:first-of-type div:last-child svg{
-     width:14px;
-     height:14px;
-     margin:0;
-  
-}
-#marseille-activities{
-    margin-top:50px;
-  
-}
-#marseille-activities-flex{
-     
-    display:flex;
-    gap:30px;
-    margin-top: 13px;
-  
-}
-#marseille-activities-flex .marseille-activities-flex-child {
-    border-radius:15px;
-    width:calc(100% / 4);
-    height:350px;
-    text-decoration:none;
-    color:#000000;
-  
+.hebergement-list a article .article-content {
+    padding: 10px 10px 0px 10px;
 }
 
-.marseille-activities-flex-child:first-child, .marseille-activities-flex-child:nth-child(3), .marseille-activities-flex-child:nth-child(2) a:first-child, .marseille-activities-flex-child:nth-child(2) a:last-child, .marseille-activities-flex-child:last-child a  {
-    box-shadow: 1px 0px 3px 0px rgba(158,158,158,1);
-    
+.hebergement-list a article .article-content h3,
+.hebergement-list a article .article-content p {
+    margin: 6px;
 }
 
-.marseille-activities-flex-child img{
-   
-    width:100%;
-    height:86%;
-    border-radius:15px 15px 0 0;
-    object-fit:cover;
-    display:block;
-  
-}
-.marseille-activities-flex-child p{
-  
-    font-weight:bold;
-    margin-top: 10px;
-    margin-left:15px;
-    display:inline-block;
-  
-}
-
-.marseille-activities-flex-child:nth-child(2), .marseille-activities-flex-child:last-child{
-  
-     display:flex;
-     flex-direction:column;
-     gap:30px;
-  
-}
-
-.marseille-activities-flex-child a{
-  
-     text-decoration:none;
-    color:#000000;
-  
-}
-
-.marseille-activities-flex-child:nth-child(2) a, .marseille-activities-flex-child:last-child a{
-  
-    border-radius:15px;
-  
-}
-
-.marseille-activities-flex-child a:first-child{
-  
-    height:51.5%;
-  
-}
-
-
-
-.marseille-activities-flex-child a:first-child img{
-  
-     height:75% !important;
-     
-}
-
-.marseille-activities-flex-child a:last-child img{
-  
-    height:65% !important;
-  
-}
-
-.marseille-activities-flex-child:nth-child(2) a:last-child{
-    height:40%;
-  
-}
-
-.marseille-activities-flex-child:last-child a:first-child{
-  
-     height:45%;
-  
-}
-.marseille-activities-flex-child:last-child a:last-child{
-  
-    height:calc(55% - 30px);
-  
-}
-.marseille-activities-flex-child:last-child a:first-child img{
-
-   height:70% !important;
-    
-  
-}
-.marseille-activities-flex-child:last-child a:last-child img{
-
-   height:70% !important;
-    
-  
-}
-
-/* footer */
-.oui{
-    background-color: #F2F2F2;
-}
-
-.bottom {
-    display: flex;
-    margin-top: 40px;
-    justify-content: space-around;
-
-}
-
-.gras {
+.hebergement-list a article .article-content .price.bold {
     font-weight: bold;
 }
 
-.bas p{
-    margin: 10px;
-} 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .oui{
-        background-size: auto;
-    }
-  }
+
+/*Marseilles*/
+
+#hebergement .marseille {
+    width: 60%;
+}
+
+#hebergement .marseille .subtitle {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+
+/*Populaires*/
+#hebergement .populaire .chart-icone {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#hebergement .populaire {
+    width: 35%;
+    position: relative;
+}
+
+#hebergement .populaire .hebergement-list {
+    flex-direction: column;
+}
+
+#hebergement .populaire .hebergement-list a {
+    width: 100%;
+}
+
+#hebergement .populaire .hebergement-list a article {
+    display: flex;
+    flex-direction: row;
+}
+
+#hebergement .populaire .hebergement-list a article img {
+    border-radius: 25px 0px 0px 25px;
+    width: 35%;
+}
+
+#hebergement .populaire .hebergement-list a article .article-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+/*Activité*/
+#activite {
+    margin-bottom: 60px;
+    ;
+}
+
+.activite-list {
+    display: flex;
+    justify-content: space-between;
+    height: 550px;
+}
+
+.activite-list .column {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+.activite-list .column article img {
+    width: 100%;
+    height: calc(100% - 67px);
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.activite-list .column article {
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px #E0E0E0;
+    border-radius: 25px;
+}
+
+.activite-list .column article h3 {
+    padding: 15px;
+    margin: 0px;
+}
+
+.activite-list .column.double article {
+    height: 48%;
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: var(--grey);
+    margin: 0px -50px;
+    padding: 50px;
+    display: flex;
+}
+
+footer .column {
+    width: 30%;
+}
+
+footer .column ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+footer .column ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 35px;
+}
