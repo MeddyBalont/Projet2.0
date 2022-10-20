@@ -1,0 +1,13 @@
+@import "./colors";
+
+@mixin shadow {
+    box-shadow: 2px 2px 10px $shadow-color;
+}
+
+@mixin darker-shadow {
+    box-shadow: 2px 2px 20px black;
+}
+
+@mixin gradient-color {
+    background-image: linear-gradient($secondary-color, $primary-color);
+}
